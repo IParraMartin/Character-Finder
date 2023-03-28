@@ -1,6 +1,6 @@
 from CharacterFinder import CharacterFinder
 
-with open("/Users/inigoparra/Desktop/tokens.txt", "r") as document:
+with open("TXT_FILE_PATH", "r") as document:
     text = document.read()
 
 tokens = text.split()
