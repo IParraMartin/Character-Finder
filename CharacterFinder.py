@@ -1,15 +1,20 @@
-with open("DIRECTORY_PATH", "r") as document:
+with open("/Users/inigoparra/Desktop/tokens.txt", "r") as document:
     text = document.read()
 
+tokens = text.split()
 
-keywords = ['SET CHARACTERS OR ENTITIES TO FIND']
+keywords = ['enrique', 'carlota']
 
 
-class CharacterLinker:
+class CharacterFinder:
 
     def __init__(self):
 
-        pass
+        try:
+            import pandas
+        
+        except:
+            print('Unicodedata library is not installed, try pip install pandas')
 
     def process_tokens(self, tokens, keyword_list):
 
@@ -47,9 +52,7 @@ class CharacterLinker:
         return keyword_found, keywords_seen, relationship_counts, relationship_list
 
 
-tokens = text.split()
-
-finder = CharacterLinker()
+finder = CharacterFinder()
 keyword_found, keywords_seen, relationship_counts, relationship_list = finder.process_tokens(tokens, keywords)
 
 for relationship, count in relationship_counts.items():
