@@ -48,14 +48,14 @@ class CharacterFinder:
                             relationship_counts[key] = 1
 
                         print(f"Detected relationship: {token} - {next_token}")
+
+        for relationship, count in relationship_counts.items():
+
+            print(f"Relationship: {relationship}, Count: {count}")
                 
         return keyword_found, keywords_seen, relationship_counts, relationship_list
 
 
 finder = CharacterFinder()
 keyword_found, keywords_seen, relationship_counts, relationship_list = finder.process_tokens(tokens, keywords)
-
-for relationship, count in relationship_counts.items():
-
-    print(f"Relationship: {relationship}, Count: {count}")
 
