@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this library, please cite it as below."
+authors:
+- family-names: "Parra"
+  given-names: "Iñigo"
+title: "CharacterLinker: Automatizing SNA Tasks in Literature"
+version: 1.0.0
+date-released: 2023-03-28
+url: "https://github.com/IParraMartin/Character-Linker"
