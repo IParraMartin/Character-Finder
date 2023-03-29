@@ -9,13 +9,14 @@ import pandas
 
 class CharacterFinder:
 
+
     def __init__(self):
 
         try:
             import pandas
-        
         except:
-            print('Unicodedata library is not installed, try pip install pandas')
+            print('Pandas library is not installed, try pip install pandas')
+            
 
     def process_tokens(self, tokens, keyword_list):
 
@@ -48,12 +49,10 @@ class CharacterFinder:
 
                             relationship_counts[key] = 1
 
-                        print(f"Detected relationship: {token} - {next_token}")
-
         for relationship, count in relationship_counts.items():
-
+            
             print(f"Relationship: {relationship}, Count: {count}")
-                
+
         return keyword_found, keywords_seen, relationship_counts, relationship_list
     
 
