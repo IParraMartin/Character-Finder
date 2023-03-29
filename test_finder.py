@@ -1,15 +1,13 @@
 from CharacterFinder import CharacterFinder
-import pandas
-
 
 #OPEN TXT FILE
-with open('/Users/inigoparra/Desktop/tokens.txt', "r") as document:
+with open('FILE_PATH_HERE', "r") as document:
     text = document.read()
 
 
 #SPLIT TOKENS AND SELECT KEYWORDS FOR RELATIONS
 tokens = text.split()
-keywords = ['enrique', 'carlota', 'sab', 'martina']
+keywords = ['NAME_1', 'NAME_2', 'NAME_3']
 
 
 # FIND RELATIONSHIPS AND COUNT

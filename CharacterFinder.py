@@ -1,14 +1,12 @@
-with open("/Users/inigoparra/Desktop/tokens.txt", "r") as document:
+import pandas
+
+with open("FILE_PATH_HERE", "r") as document:
     text = document.read()
 
 tokens = text.split()
-
 keywords = ['enrique', 'carlota', 'sab', 'martina']
 
-import pandas 
-
 class CharacterFinder:
-
 
     def __init__(self):
 
@@ -16,7 +14,7 @@ class CharacterFinder:
             import pandas
         except:
             print('Pandas library is not installed, try pip install pandas')
-            
+
 
     def process_tokens(self, tokens, keyword_list):
 

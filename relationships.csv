@@ -1,0 +1,17 @@
+,Source,Target,Weight
+0,enrique,martina,0.72
+1,martina,carlota,0.92
+2,carlota,enrique,6.5
+3,carlota,carlota,4.88
+4,enrique,carlota,6.12
+5,enrique,enrique,2.84
+6,carlota,sab,3.38
+7,enrique,sab,4.22
+8,sab,enrique,3.22
+9,sab,sab,4.38
+10,sab,carlota,4.3
+11,martina,sab,3.08
+12,sab,martina,2.4
+13,martina,martina,0.66
+14,carlota,martina,0.76
+15,martina,enrique,0.56
