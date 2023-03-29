@@ -2,7 +2,10 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/IParraMartin/APA-Automatic-Praat-Analyzer?color=red)
 
 # Character Finder 🔎
-Algorithm to find relations between characters in a text .txt file
+Algorithm to find relations between characters in a text (.TXT) file
 
-## Gephi .csv files
-- Allows to export CSV files to use in Gephi
+## Features ✅
+- Includes edge mappings and weights based on number of interactions found
+- Allows to export CSV files, making it easy to combine it
+- Designed to extract edge spreadsheets for Gephi (source, target, and weights)
+
