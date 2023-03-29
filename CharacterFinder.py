@@ -1,10 +1,11 @@
-with open("TXT_FILE_PATH", "r") as document:
+with open("/Users/inigoparra/Desktop/tokens.txt", "r") as document:
     text = document.read()
 
 tokens = text.split()
 
-keywords = ['enrique', 'carlota']
+keywords = ['enrique', 'carlota', 'sab', 'martina']
 
+import pandas 
 
 class CharacterFinder:
 
@@ -54,8 +55,16 @@ class CharacterFinder:
             print(f"Relationship: {relationship}, Count: {count}")
                 
         return keyword_found, keywords_seen, relationship_counts, relationship_list
+    
+
+    def get_csv(self):
+
+        relationship_data = [(r[0], r[1], count/100) for r, count in relationship_counts.items()]
+        df = pandas.DataFrame(relationship_data, columns=['Source', 'Target', 'Weight'])
+        df.to_csv('relationships.csv')
 
 
 finder = CharacterFinder()
 keyword_found, keywords_seen, relationship_counts, relationship_list = finder.process_tokens(tokens, keywords)
+
 
