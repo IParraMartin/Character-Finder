@@ -12,6 +12,7 @@ class CharacterFinder:
 
         try:
             import pandas
+            
         except:
             print('Pandas library is not installed, try pip install pandas')
 
