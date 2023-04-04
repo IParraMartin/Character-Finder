@@ -4,6 +4,11 @@ import pandas
 with open("FILE_PATH_HERE", "r") as document:
     text = document.read()
 
+
+# sentences = text.split('. ')
+# sentence_lenght = [len(sentence.split()) for sentence in sentences]
+# average_sentence_lenght = sum(sentence_lenght)/len(sentence_lenght) 
+
 tokens = text.split()
 keywords = ['enrique', 'carlota', 'sab', 'martina']
 
